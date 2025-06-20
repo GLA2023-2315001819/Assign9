@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tax Calculator</title>
+  <script>
+    function calculateTax(amount, ...taxPercentages) {
+      let totalTax = 0;
+      for (let tax of taxPercentages) {
+        totalTax += (amount * tax) / 100;
+      }
+      return amount + totalTax;
+    }
+  </script>
+</head>
+<body>
+  <h1>Tax Calculator</h1>
+</body>
+</html>
