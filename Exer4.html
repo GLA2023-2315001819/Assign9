@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Even Number Checker</title>
+  <script>
+    function isEven(n) {
+      n = Math.abs(n); 
+      if (n === 0) return true;
+      if (n === 1) return false;
+      return isEven(n - 2);
+    }
+
+    
+    console.log(isEven(4)); 
+    console.log(isEven(7)); 
+  </script>
+</head>
+<body>
+  <h1>Even Number Checker</h1>
+</body>
+</html>
