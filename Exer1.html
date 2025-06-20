@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Alarm Assistant</title>
+  <script>
+    function setAlarm(time, message, callback) {
+      const now = new Date();
+      const alarmTime = new Date(time);
+      const diff = alarmTime - now;
+
+      if (diff <= 0) {
+        console.log("Time must be in the future!");
+        return;
+      }
+
+      setTimeout(() => {
+        callback(message);
+      }, diff);
+    }
+    function showNotification(msg) {
+      console.log(msg);
+    }
+  </script>
+</head>
+<body>
+    </body>
+        
+</html>
